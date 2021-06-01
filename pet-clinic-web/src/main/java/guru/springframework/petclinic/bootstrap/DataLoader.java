@@ -3,7 +3,7 @@ package guru.springframework.petclinic.bootstrap;
 import guru.springframework.petclinic.model.*;
 import guru.springframework.petclinic.services.OwnerService;
 import guru.springframework.petclinic.services.PetTypeService;
-import guru.springframework.petclinic.services.SpecialitiesService;
+import guru.springframework.petclinic.services.SpecialityService;
 import guru.springframework.petclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -16,9 +16,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
     private final PetTypeService petTypeService;
-    private final SpecialitiesService specialitiesService;
+    private final SpecialityService specialitiesService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialitiesService specialitiesService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialitiesService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
